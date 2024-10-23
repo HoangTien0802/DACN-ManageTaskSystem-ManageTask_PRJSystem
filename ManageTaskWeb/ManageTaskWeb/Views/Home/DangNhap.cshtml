@@ -3,18 +3,174 @@
 }
 
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width" />
-    <title>DangNhap</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #e0f4ff;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .login-box {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            padding: 20px;
+        }
+
+        .welcome-text {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+            .welcome-text h2 {
+                font-size: 1.8rem;
+                margin-bottom: 10px;
+                color: #333;
+            }
+
+            .welcome-text p {
+                color: #666;
+                font-size: 0.9rem;
+            }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+            form input[type="text"], form input[type="password"] {
+                padding: 10px;
+                margin-bottom: 15px;
+                border: 1px solid #ddd;
+                border-radius: 5px;
+                font-size: 1rem;
+            }
+
+            form input[type="checkbox"] {
+                margin-right: 10px;
+            }
+
+        .btn {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+            .btn:hover {
+                background-color: #0056b3;
+            }
+
+        .login-options {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 15px;
+        }
+
+            .login-options span {
+                margin-right: 10px;
+                color: #888;
+            }
+
+        .google-btn {
+            background-color: white;
+            border: 1px solid #ddd;
+            color: #333;
+            padding: 10px;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+            .google-btn:hover {
+                border-color: #aaa;
+            }
+
+        .forgot-pass {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+            .forgot-pass a {
+                color: #007bff;
+                text-decoration: none;
+            }
+
+                .forgot-pass a:hover {
+                    text-decoration: underline;
+                }
+
+        .icon {
+            font-size: 2rem;
+            color: #007bff;
+        }
+
+        .illustration {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+            .illustration img {
+                width: 100px;
+                margin-bottom: 20px;
+            }
+    </style>
 </head>
 <body>
-    <div>
-        <form>
-            <input />TenDN
-            <input />MK
-        </form>
+    <div class="container">
+        <div class="login-box">
+            <div class="illustration">
+                <i class="fas fa-project-diagram icon"></i>
+            </div>
+            <div class="welcome-text">
+                <h2>Hi Welcome Back!</h2>
+                <p>Hello again, you have been missed!</p>
+            </div>
+            <form>
+                <input type="text" placeholder="Username" required />
+                <input type="password" placeholder="Password" required />
+                <label>
+                    <input type="checkbox"> Remember me
+                </label>
+                <button type="submit" class="btn">Login</button>
+            </form>
+            <div class="login-options">
+                <span>Or Login With</span>
+                <button class="google-btn">
+                    <i class="fab fa-google"></i> Login with Google
+                </button>
+            </div>
+            <div class="forgot-pass">
+                <a href="#">Forgot your password?</a>
+            </div>
+        </div>
     </div>
 </body>
 </html>
