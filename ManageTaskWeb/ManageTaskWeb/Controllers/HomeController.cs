@@ -16,5 +16,9 @@ namespace ManageTaskWeb.Controllers
             return View();
         }
 
+        public ActionResult TrangChu()
+        {
+            return View();
+        }
     }
 }
