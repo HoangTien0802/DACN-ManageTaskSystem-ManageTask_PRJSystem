@@ -20,5 +20,9 @@ namespace ManageTaskWeb.Controllers
         {
             return View();
         }
+        public ActionResult DSProject()
+        {
+            return View();
+        }
     }
 }
