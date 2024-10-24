@@ -24,5 +24,14 @@ namespace ManageTaskWeb.Controllers
         {
             return View();
         }
+        public ActionResult DSMember()
+        {
+            return View();
+        }
+
+        public ActionResult DSTask()
+        {
+            return View();
+        }
     }
 }
